@@ -4,6 +4,13 @@
   app.controller('StoreController', function() {
     this.products = gems;
   });
+  
+  app.directive('productDescription', function() {
+    return {
+      restrict : 'E',
+      templateUrl : 'product-description.html'
+    };
+  });
 
   app.controller("TabController", function() {
     this.tab = 1;

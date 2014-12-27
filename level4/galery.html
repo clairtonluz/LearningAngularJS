@@ -53,9 +53,9 @@
           </ul>
 
           <!--  Description Tab's Content  -->
-          <div ng-show="tab.isSet(1)" ng-include="'product-description.html'">
-          </div>
-
+          <product-description ng-show="tab.isSet(1)">
+          </product-description>
+          
           <!--  Spec Tab's Content  -->
           <div ng-show="tab.isSet(2)">
             <h4>Specs</h4>
